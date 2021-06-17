@@ -2,7 +2,8 @@
     "name": "appid_icon",
     "version": "0.0.1",
     "scripts": {
-        "start": "node app.js"
+        "start": "node app.js",
+        "lint": "eslint ."
     },
     "dependencies": {
         "ejs": "^3.1.6",
@@ -14,5 +15,9 @@
     "repository": {},
     "engines": {
         "node": "10.x"
+    },
+    "devDependencies": {
+        "eslint": "^7.28.0",
+        "eslint-config-google": "^0.14.0"
     }
 }

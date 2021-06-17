@@ -1,6 +1,7 @@
 //. app.js
 
 var express = require( 'express' ),
+    // eslint-disable-next-line no-unused-vars
     ejs = require( 'ejs' ),
     passport = require( 'passport' ),
     session = require( 'express-session' ),
@@ -32,9 +33,11 @@ passport.use( new WebAppStrategy({
 
 //. enable routing
 app.use( express.Router() );
+// eslint-disable-next-line no-undef
 app.use( express.static( __dirname + '/public' ) );
 
 //. template engine
+// eslint-disable-next-line no-undef
 app.set( 'views', __dirname + '/views' );
 app.set( 'view engine', 'ejs' );
 
@@ -73,6 +76,7 @@ app.get( '/', function( req, res ){
 
 
 //. listening to port
+// eslint-disable-next-line no-undef
 var port = process.env.PORT || 8080;
 app.listen( port );
 console.log( "server starting on " + port + " ..." );
